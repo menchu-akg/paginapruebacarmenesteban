@@ -1,0 +1,87 @@
+header{
+	color: purple;
+	background-color: #DEB88;
+	text-align: center;
+	font-size:30px;
+	background-color:pink;
+}
+body{
+	color:#FF9275;
+	background-color: #FFDFD5;
+
+}/*PONER DE MARRÓN EL TEXTO DEL BODY*/
+p{	font-family: "tahoma";
+	font-size: 20px;
+	color: #A300A3;
+	text-align:justify;
+}/*poner letra tahoma de 20px en color*/
+footer{
+	color: #D47863;
+	background-color: #995948;
+	text-align: center;
+	font-size: 15px;
+}
+.vamosaensayar{
+	font-family:"Bahnschrift Semibold";
+	font-size:60px;
+	font-style:italic;
+	font-weight:bold;
+	font-variant:small-caps;
+	color:teal;
+	text-align:center;
+	text-decoration:teal underline wavy;
+	text-shadow:2px 2px 4px #070A9C;
+	line-height:1,5;
+}
+#menuhorizontal ul {
+		/*linea para delimitar la botonera*/
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+		border-bottom-color: #E4D4D4;
+}
+#menuhorizontal ul li {
+		display: inline;
+		padding: 2px 7px; /*separar el texto*/
+		margin: 5px; /*separar los botones*/
+		background-color: #800080;
+		color: white;
+		font-family: "Comic Sans MS";
+		font-size: "20px";
+}
+#menuhorizontal ul li:hover{
+		background-color: #CCCCCC; /*color de fondo sobre el boton*/
+ 		cursor: pointer; /*cambiar el aspecto del puntero*/
+		
+}
+#menuhorizontal ul li a{ 
+		text-decoration: none;
+		color: inherit;
+}
+#menuD ul li{ /*formato de los botones*/
+	width: 100px;
+	height: 25px;
+	display: inline-block;
+	padding: 2px 7px;
+	margin: 5px;
+	background-color: #800080;
+	color: white;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 16px;
+	position: relative;
+}
+#menuD ul li: hover{
+	background-color: grey;
+	color: purple;
+}
+#menuD li>ul{
+	display: none; /*oculta las listas anidadas, los submenús*/
+}
+#menuD li:hover>ul{ /*muestra los submenús al pasar por encima del menú*/
+	display: inline-block; /*muestra los submenús el uno al lado del otro al lado del menú*/
+	position: absolute; /*evita que se superpongan los botones*/
+}
+#menuD ul>li:hover>ul{ /*muestra los submenús al pasar por encima de un submenú*/
+	display: inline-block;
+	position: absolute;
+}
